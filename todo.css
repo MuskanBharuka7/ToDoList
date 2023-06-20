@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(250, 199, 60);
+    padding: auto;
+    min-height: 92vh;
+    width: 100%;
+}
+.todo{
+    position: absolute;
+    padding: 25px 30px 70px;
+    background: #fff;
+    width: 100%;
+    max-width: 475px;
+    margin: 100px 420px 20px;
+    border-radius: 3%;
+}
+.todo h2{
+    font-size: 2rem;
+    color: rgb(32, 30, 100);
+    display: flex;
+    margin-bottom: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(197, 193, 193);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 17px;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 15px 30px;
+    background-color: rgb(32, 30, 100);
+    color: #fff;
+    font-size: 17px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    font-size: 22px;
+    color: rgb(32, 30, 100);
+    padding: 15px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-image: url(uncheck.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.check{
+   color: #414040;
+   text-decoration: line-through;
+}
+ul li.check::before{
+   background-image: url(checked.png);
+}
+ul li cross{
+    position: absolute;
+    right: 10px;
+    /* top: 0px; */
+    margin-bottom: 15px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    color: #fff;
+    background:#3e3f4e;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li cross:hover{
+    background: #70728f ;
+}
+footer{
+    background-color: rgb(250, 199, 60);
+    
+}
+footer div{
+    display: table;
+    color: #fff;
+    font-size: 23px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
